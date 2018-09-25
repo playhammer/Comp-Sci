@@ -9,7 +9,7 @@ package lab4;
 public class PiggyBank
 {
   private int maxCoins;
-  private int coins;
+  private int coins;		// THIS SHOULD BE INITIALIZED TO ZERO
   private boolean busted;
   
   /**
@@ -39,10 +39,12 @@ public class PiggyBank
     }
     
     // we can only add coins if not busted
-    if (busted == false)
+    if (!busted)
     {
       coins = newCoins;
     }
+    
+    // You should be adding the new coins to the current balance
     
   }
   
@@ -73,6 +75,7 @@ public class PiggyBank
    */
   public boolean isSmashed()
   {
+	  // Umm, just use  return busted;
     if (busted = true)
     {
       return true;

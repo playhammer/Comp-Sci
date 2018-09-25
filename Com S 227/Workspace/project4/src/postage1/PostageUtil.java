@@ -15,6 +15,6 @@ public class PostageUtil
 	  // There is nothing wrong with the third flowchart
 	  
 	  // Implements the first flowchart
-	  return (weight<=1) ? 0.47 : ((weight<=3.5) ? 0.47 + Math.ceil(weight - 1) * 0.21 : 0.94 + Math.ceil(weight - 1) * 0.21);
+	  return  (weight<=1) ? 0.47 : ((weight<=3.5) ? 0.47 + Math.ceil(weight - 1) * 0.21 : 0.94 + Math.ceil(weight - 1) * 0.21);
   }
 }
